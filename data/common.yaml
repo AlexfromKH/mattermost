@@ -1,0 +1,8 @@
+---
+# mattermost database
+mysql_r_pass: 'root'
+mmuser: 'mmuser'
+mmpass: 'mmpass'
+
+# mattermost
+mmversion:  '5.7.0'
