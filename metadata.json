@@ -1,23 +1,12 @@
 {
-  "me": "puppetlabs/stdlib",
-        "version_requirement": ">= 4.13.1 < 6.0.0"
-              }name": "vagrant-mattermost",
+  "name": "mattermost",
   "version": "0.1.2",
   "author": "Alexst",
   "summary": "Install mattermost on CentOS",
   "license": "Apache-2.0",
   "source": "https://github.com/AlexfromKH/mattermost",
   "dependencies": [
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.13.1 < 6.0.0"
-    }
-  ],
-  "requirements": [
-    {
-      "name": "puppet",
-      "version_requirement": ">= 4.10.0 < 7.0.0"
-    }
+
   ],
   "pdk-version": "1.8.0",
   "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",

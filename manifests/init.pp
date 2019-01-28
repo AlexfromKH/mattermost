@@ -1,7 +1,6 @@
 # Class: mattermost
 # *****************
 class mattermost {
-  include mattermost::mysql
   include mattermost::download
 #  include mattermost::service
 #  include mattermost::nginx
