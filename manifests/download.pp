@@ -1,10 +1,10 @@
 # Class download::mattermost
 # ***************************
 class mattermost::download (
-  String  $mmversion      = $mattermost::params::mmversion
-  String  $mmdir          = $mattermost::params::mmdir
-  String  $mmdata         = $mattermost::params::mmdata
-  String  $mmdownload     = $mattermost::params::mmdownload
+    $mmversion      = $mattermost::params::mmversion
+    $mmdir          = $mattermost::params::mmdir
+    $mmdata         = $mattermost::params::mmdata
+    $mmdownload     = $mattermost::params::mmdownload
   ) inherits mattermost::params {
 
   archive {"${mmdir}/mattermost-team-${mmversion}-linux-amd64.tar.gz":
