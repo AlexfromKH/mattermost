@@ -11,6 +11,7 @@ class mattermost::download (
   archive {"${mmdir}/mattermost-team-${mmversion}-linux-amd64.tar.gz":
     ensure        => present,
     extract       => true,
+    extract_path  => $mmdir,
     source        => $mmdownload,
 #    checksum      => $mmchecksum,
 #    checksum_type => 'sha256',
