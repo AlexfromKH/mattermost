@@ -5,6 +5,6 @@ class mattermost {
 #  include mattermost::service
 #  include mattermost::nginx
 
-  Class['mattermost::mysql'] -> Class['mattermost::download'] # -> Class['mattermost::service'] ~> Class['mattermost::nginx']
+#  Class['mattermost::mysql'] -> Class['mattermost::download'] -> Class['mattermost::service'] ~> Class['mattermost::nginx']
 }
 
