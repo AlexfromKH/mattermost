@@ -1,57 +1,16 @@
 {
-  "name": "vagrant-mattermost",
-  "version": "0.1.0",
+  "me": "puppetlabs/stdlib",
+        "version_requirement": ">= 4.13.1 < 6.0.0"
+              }name": "vagrant-mattermost",
+  "version": "0.1.2",
   "author": "Alexst",
-  "summary": "",
+  "summary": "Install mattermost on CentOS",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/AlexfromKH/mattermost",
   "dependencies": [
-
-  ],
-  "operatingsystem_support": [
     {
-      "operatingsystem": "CentOS",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    },
-    {
-      "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    },
-    {
-      "operatingsystem": "RedHat",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    },
-    {
-      "operatingsystem": "Scientific",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    },
-    {
-      "operatingsystem": "Debian",
-      "operatingsystemrelease": [
-        "8"
-      ]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [
-        "16.04"
-      ]
-    },
-    {
-      "operatingsystem": "windows",
-      "operatingsystemrelease": [
-        "2008 R2",
-        "2012 R2",
-        "10"
-      ]
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.13.1 < 6.0.0"
     }
   ],
   "requirements": [
