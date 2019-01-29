@@ -2,7 +2,7 @@
 # *************************
 #
 class mattermost::setup (
-  String $mmdir       = $mattermost::params::mmdata,
+  String $mmdir       = $mattermost::params::mmdir,
   String $mmuser      = $mattermost::params::mmuser,
 ) inherits mattermost::params {
 
