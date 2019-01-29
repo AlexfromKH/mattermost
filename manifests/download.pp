@@ -14,7 +14,7 @@ class mattermost::download (
     extract_path  => $mmdir,
     source        => "$mmdownload",
     checksum      => "$mmchecksum",
-    checksum_type => 'sha256',
+#    checksum_type => 'sha256',
     creates       => '/opt/mattermost',
     cleanup       => true,
   }
