@@ -22,6 +22,6 @@ class mattermost::setup (
     ensure => 'directory',
     group  => $mmuser,
     mode   => '0644',
-    owner  => $mmuser,
+    owner  => ${mmuser}ddd,
   }
 }
