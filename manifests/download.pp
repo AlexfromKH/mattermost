@@ -12,7 +12,7 @@ class mattermost::download (
     ensure        => present,
     extract       => true,
     extract_path  => $mmdir,
-    source        => $"mmdownload",
+    source        => "$mmdownload",
     checksum      => "$mmchecksum",
     checksum_type => 'sha256',
     creates       => '/opt/mattermost',
