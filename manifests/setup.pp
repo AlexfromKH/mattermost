@@ -17,10 +17,11 @@ class mattermost::setup (
     groups  => $mmuser,
     require => Group[$mmuser],
   }
-  file { "${mmdir}/${mmuser}":
+  file {"${mmdir}/${mmuser}":
     ensure => 'directory',
     group  => $mmuser,
     mode   => '0664',
     owner  => $mmuser,
   }
+  notify { "${mmdir}/${mmuser}": }
 }
