@@ -5,7 +5,7 @@ class mattermost::download (
   String  $mmdir          = $mattermost::params::mmdir,
   String  $mmdata         = $mattermost::params::mmdata,
   String  $mmdownload     = $mattermost::params::mmdownload,
-  Integer $mmchecksum     = $mattermost::params::mmchecksum,
+  $mmchecksum             = $mattermost::params::mmchecksum,
   ) inherits mattermost::params {
 
   archive {"${mmdir}/mattermost-team-${mmversion}-linux-amd64.tar.gz":
