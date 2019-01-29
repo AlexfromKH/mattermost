@@ -23,7 +23,7 @@ class mattermost::setup (
     group   => $mmuser,
     mode    => '0664',
     owner   => $mmuser,
-    require => [ User[$mmuser], Group[$mmuser] ],
+#    require => [ User[$mmuser], Group[$mmuser] ],
   }
   notify {"${mmdir}/${mmuser}":}
 }
