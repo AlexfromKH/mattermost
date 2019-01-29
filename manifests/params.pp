@@ -4,7 +4,7 @@
 class mattermost::params {
 # mysql params
   $mysql_r_pass    = 'root'
-  $mmuser          = 'mmuser'
+  $mmuser          = 'mattermost'
   $mmpass          = 'mmpass'
 #
 # mattermost params
