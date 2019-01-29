@@ -5,15 +5,15 @@ class mattermost::download (
   String  $mmdir          = $mattermost::params::mmdir,
   String  $mmdata         = $mattermost::params::mmdata,
   String  $mmdownload     = $mattermost::params::mmdownload,
-  String  $mmchecksum     = $mattermost::params::mmchecksum,
+  Integer $mmchecksum     = $mattermost::params::mmchecksum,
   ) inherits mattermost::params {
 
   archive {"${mmdir}/mattermost-team-${mmversion}-linux-amd64.tar.gz":
     ensure        => present,
     extract       => true,
     extract_path  => $mmdir,
-    source        => $mmdownload,
-    checksum      => $mmchecksum,
+    source        => $"mmdownload",
+    checksum      => "$mmchecksum",
     checksum_type => 'sha256',
     creates       => '/opt/mattermost',
     cleanup       => true,
